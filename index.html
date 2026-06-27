@@ -138,26 +138,26 @@
 
 /* ===================== SECTIONS ===================== */
 .contents_div .kwenad-blk { padding:65px 50px; }
-/* 접수 분야 — cool mint·sky wash */
-.contents_div .kwenad-ivory-a {
+/* 접수 분야 — mist (제외 섹션 · 색 유지) */
+.contents_div .kwenad-mist {
   background:
     radial-gradient(70% 55% at 16% 8%, rgba(255, 253, 248, 0.18), transparent 62%),
     linear-gradient(180deg,#f7f7f7 0%,#f4f4f4 100%);
   color:var(--plum);
 }
-/* 시상 내역 — warm gold·peach wash */
-.contents_div .kwenad-ivory-b {
+/* 시상 내역 — warm gold (더 진하고 쨍하게) */
+.contents_div .kwenad-gold {
   background:
-    radial-gradient(72% 55% at 84% 8%, rgba(255, 187, 51, 0), transparent 62%),
-    linear-gradient(180deg,#fff6e6 0%,#f3f3f3 100%);
+    radial-gradient(72% 55% at 84% 8%, rgba(255, 186, 46, 0.15), transparent 62%),
+    linear-gradient(180deg,#fff2d4 0%,#fcebda 100%);
   color:var(--plum);
 }
 .contents_div .kwenad-blk-cont { padding-top:0; }
 .contents_div .kwenad-ink {
   background:
-    radial-gradient(72% 50% at 20% 8%, rgba(250, 133, 158, 0.144), transparent 60%),
-    radial-gradient(76% 60% at 82% 94%, rgba(144, 202, 255, 0.192), transparent 70%),
-    linear-gradient(180deg,#f1ecfb 0%,#f7eef6 100%);
+    radial-gradient(72% 50% at 20% 8%, rgba(250, 120, 150, 0.26), transparent 60%),
+    radial-gradient(76% 60% at 82% 94%, rgba(120, 188, 255, 0.34), transparent 70%),
+    linear-gradient(180deg,#e6daf6 0%,#f0e0f0 100%);
   color:var(--plum);
 }
 
@@ -358,11 +358,11 @@
   .contents_div .kwenad-note.kwenad-on-ink + .kwenad-note.kwenad-on-ink { margin-bottom:-10px; }
 
   /* [6] 시상 — 좌측 r·s / 우측 aw-a, 비율 6:4 */
-  .contents_div .kwenad-blk.kwenad-ivory .kwenad-aw { grid-template-columns:6fr 4fr; grid-template-areas:"r a" "s a"; align-items:center; gap:0 14px; padding:18px 20px; }
+  .contents_div .kwenad-blk.kwenad-gold .kwenad-aw { grid-template-columns:6fr 4fr; grid-template-areas:"r a" "s a"; align-items:center; gap:0 14px; padding:18px 20px; }
   .contents_div .kwenad-aw-r { font-size:17px; }
   .contents_div .kwenad-aw-s { font-size:13px; margin-top:2px; }
-  .contents_div .kwenad-blk.kwenad-ivory .kwenad-aw-a:not(.kwenad-aw-gift) { font-size:28px; margin-top:0; justify-self:end; text-align:right; }
-  .contents_div .kwenad-blk.kwenad-ivory .kwenad-aw-a.kwenad-aw-gift { font-size:19px; font-weight:900; margin-top:0; justify-self:end; text-align:right; }
+  .contents_div .kwenad-blk.kwenad-gold .kwenad-aw-a:not(.kwenad-aw-gift) { font-size:28px; margin-top:0; justify-self:end; text-align:right; }
+  .contents_div .kwenad-blk.kwenad-gold .kwenad-aw-a.kwenad-aw-gift { font-size:19px; font-weight:900; margin-top:0; justify-self:end; text-align:right; }
   .contents_div .kwenad-aw-a i { font-size:13px; }
 
   /* h2 아래 카드 좌우 패딩 18px 통일 (세로값 유지) */
@@ -370,7 +370,7 @@
   .contents_div .kwenad-steps li { padding:16px 18px; }
   .contents_div .kwenad-vote { padding:24px 18px; }
   .contents_div .kwenad-tl li { padding:14px 18px; }
-  .contents_div .kwenad-blk.kwenad-ivory .kwenad-aw { padding:18px 18px; }
+  .contents_div .kwenad-blk.kwenad-gold .kwenad-aw { padding:18px 18px; }
 }
 @media (prefers-reduced-motion:reduce) {
   .contents_div .kwenad-btn, .contents_div .kwenad-btn span { transition:none; }
@@ -413,7 +413,7 @@
 
         <p class="kwenad-gloss"> <span class="kwenad-brace">귄</span>  전남·광주가 함께 쓰는 말 <span class="kwenad-gloss-line" aria-hidden="true"></span> <b class="kwenad-brace">매력 있다 · 정겹다</b></p>
 
-        <p class="kwenad-hlede">우리 특별시,<br><span class="kwenad-hot">귄있게</span> 자랑해불자.</p>
+        <p class="kwenad-hlede">우리 특별시,<br><span class="kwenad-hot">귄있게</span> 자랑해불자.1</p>
 
         <ul class="kwenad-hmeta">
           <li><b>접수</b>2026.7.1–7.31</li>
@@ -438,7 +438,7 @@
     </section>
 
     <!-- ===================== 접수 분야 (ivory) ===================== -->
-    <section class="kwenad-blk kwenad-ivory kwenad-ivory-a">
+    <section class="kwenad-blk kwenad-mist">
       <p class="kwenad-eye kwenad-eye-hot">접수 분야</p>
       <h2 class="kwenad-h2">4가지 방법으로,<br>귄있게 참여.</h2>
       <p class="kwenad-lead">한 줄이면 충분. AI를 못 써도 손그림으로 OK. 내 수준에 맞게 골라요.</p>
@@ -501,7 +501,7 @@
     </section>
 
     <!-- ===================== 시상 (ivory) ===================== -->
-    <section class="kwenad-blk kwenad-ivory kwenad-ivory-b">
+    <section class="kwenad-blk kwenad-gold">
       <p class="kwenad-eye kwenad-eye-hot">시상 내역</p>
       <h2 class="kwenad-h2">수상작은 영상이 되어<br><span class="kwenad-hot">전국에 퍼진다.</span></h2>
       <ul class="kwenad-awards">
