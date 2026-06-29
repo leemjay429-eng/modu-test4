@@ -123,7 +123,7 @@
 .contents_div .kwenad-hero-img { display:block; width:100%; height:auto; }
 .contents_div .kwenad-hero-in { position:relative; z-index:1; }
 
-.contents_div .kwenad-gloss { position:relative; z-index:1; display:inline-flex; align-items:center; gap:9px; font-size:16px; font-weight:700; color:#5b5568; background:transparent; border:0; padding:0; margin-bottom:18px; word-break:keep-all; }
+.contents_div .kwenad-gloss { position:relative; z-index:1; display:inline-flex; align-items:center; gap:9px; font-size:16px; font-weight:700; color:#5b5568; background:transparent; border:0; padding:0; margin-bottom:8px; word-break:keep-all; }
 .contents_div .kwenad-brace::before { content:"{"; margin-right:1px; }
 .contents_div .kwenad-brace::after { content:"}"; margin-left:1px; }
 .contents_div .kwenad-gloss .kwenad-brace { color:var(--kwenad-blue); }
@@ -131,7 +131,14 @@
 .contents_div .kwenad-gloss-k { display:inline-grid; place-items:center; flex:0 0 auto; width:24px; height:24px; border-radius:50%; border:1px solid var(--kwenad-blue); background:transparent; font-family:"Paperozi","Pretendard",sans-serif; font-weight:900; font-size:14px; color:var(--kwenad-blue); }
 .contents_div .kwenad-gloss b { color:var(--kwenad-blue); font-weight:800; }
 
-.contents_div .kwenad-hlede { position:relative; z-index:1; font-family:"Paperozi","Pretendard",sans-serif; font-weight:900; font-size:clamp(30px,7vw,46px); line-height:1.06; letter-spacing:-0.03em; color:var(--plum); margin:0; word-break:keep-all; }
+/* ===== signature lockup — 전남 ＋ 광주 ＝ 귄 ===== */
+.contents_div .kwenad-sig { position:relative; z-index:1; display:flex; justify-content:flex-start; align-items:center; gap:8px; margin:1px 0 22px; font-family:"Paperozi","Pretendard",sans-serif; font-weight:900; line-height:1; word-break:keep-all; }
+.contents_div .kwenad-sig-w { display:inline-flex; align-items:center; padding:7px 14px; border-radius:999px; font-size:17px; letter-spacing:-0.02em; color:var(--plum); border:1.5px solid var(--j-rim); background:var(--j-fill); -webkit-backdrop-filter:blur(7px) saturate(140%); backdrop-filter:blur(7px) saturate(140%); }
+.contents_div .kwenad-sig-op { font-size:16px; color:var(--kwenad-blue); }
+.contents_div .kwenad-sig-k { position:relative; overflow:hidden; display:inline-grid; place-items:center; min-width:44px; height:40px; padding:0 14px; border-radius:999px; font-size:21px; color:#fff; border:1.5px solid rgba(255,255,255,.6); background:radial-gradient(120% 90% at 28% 12%, rgba(255,255,255,.5), rgba(255,255,255,0) 45%), linear-gradient(150deg,var(--peach-l),var(--hot)); }
+.contents_div .kwenad-sig-k::before { content:""; position:absolute; left:16%; right:18%; top:8%; height:34%; border-radius:999px; background:linear-gradient(180deg, rgba(255,255,255,.9), rgba(255,255,255,0)); pointer-events:none; }
+
+.contents_div .kwenad-hlede { position:relative; z-index:1; font-family:"Paperozi","Pretendard",sans-serif; font-weight:900; font-size:clamp(30px,7vw,46px); line-height:1.06; letter-spacing:-0.03em; color:var(--plum); margin:5px 0; word-break:keep-all; }
 .contents_div .kwenad-hmeta { position:relative; z-index:1; list-style:none; display:flex; flex-wrap:wrap; gap:10px; margin-top:34px; margin-bottom:30px; }
 .contents_div .kwenad-hmeta li { position:relative; overflow:hidden; flex:1 1 150px; min-width:138px; background:linear-gradient(160deg, #ffffff 0%, #eceaf5 100%); border:1.5px solid #ffffff; border-radius:18px; padding:11px 18px; font-weight:800; font-size:16px; color:var(--plum); word-break:keep-all; }
 .contents_div .kwenad-hmeta b { display:block; position:relative; font-size:12px; font-weight:800; color:var(--hot); margin-bottom:2px; letter-spacing:.02em; }
@@ -302,8 +309,12 @@
 
   /* 본문 카피 — 14px 통일 */
   /* [1] gloss 한 줄 고정 */
-  .contents_div .kwenad-gloss { font-size:13px; gap:6px; margin-bottom:16px; flex-wrap:nowrap; white-space:nowrap; }
+  .contents_div .kwenad-gloss { font-size:13px; gap:6px; margin-bottom:7px; flex-wrap:nowrap; white-space:nowrap; }
   .contents_div .kwenad-gloss-line { width:8px; }
+  .contents_div .kwenad-sig { gap:6px; margin-bottom:18px; }
+  .contents_div .kwenad-sig-w { font-size:14px; padding:6px 12px; }
+  .contents_div .kwenad-sig-op { font-size:14px; }
+  .contents_div .kwenad-sig-k { font-size:18px; min-width:38px; height:34px; padding:0 12px; }
   .contents_div .kwenad-hmeta li { flex:1 1 100%; font-size:14px; }
   .contents_div .kwenad-lead { font-size:14px; margin-top:14px; }
   .contents_div .kwenad-cat-t { font-size:18px; }
@@ -412,6 +423,14 @@
         <h1 class="kwenad-sr">전남광주통합특별시 출범기념 · 귄있는 시민 AI 광고제</h1>
 
         <p class="kwenad-gloss"> <span class="kwenad-brace">귄</span>  전남·광주가 함께 쓰는 말 <span class="kwenad-gloss-line" aria-hidden="true"></span> <b class="kwenad-brace">매력 있다 · 정겹다</b></p>
+
+        <p class="kwenad-sig" aria-label="전남 더하기 광주 는 귄">
+          <span class="kwenad-sig-w">전남</span>
+          <span class="kwenad-sig-op" aria-hidden="true">＋</span>
+          <span class="kwenad-sig-w">광주</span>
+          <span class="kwenad-sig-op" aria-hidden="true">＝</span>
+          <span class="kwenad-sig-k">귄</span>
+        </p>
 
         <p class="kwenad-hlede">우리 특별시,<br><span class="kwenad-hot">귄있게</span> 자랑해불자.</p>
 
